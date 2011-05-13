@@ -1,0 +1,10 @@
+[user]
+  name = niedhui
+  email = dianhui.nie@gmail.com
+[color]
+  ui = true
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
