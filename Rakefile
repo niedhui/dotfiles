@@ -11,7 +11,7 @@ task :install do
       if File.identical? file,File.join(ENV['HOME'],".#{file}")
         puts "identical ~/.#{file}"
       elsif replace_all
-        replace_file(fiel)
+        replace_file(file)
       else
         print "overwrite ~/.#{file}? [ynaq]"
         case $stdin.gets.chomp
