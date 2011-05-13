@@ -6,7 +6,7 @@ task :install do
   replace_all = false
   Dir['*'].each do |file|
     next if %w[Rakefile README.rdoc LICENSE].include? file
-    if File.exist?(File.join(ENV['HOME']),".#{file}")
+    if File.exist?(File.join(ENV['HOME'],".#{file}"))
       # why?
       if File.identical? file,File.join(ENV['HOME'],".#{file}")
         puts "identical ~/.#{file}"
