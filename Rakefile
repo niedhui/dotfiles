@@ -2,7 +2,15 @@ require "rake"
 
 desc "install the dot files into user's home directory"
 
-task :install do
+task :install_vundle do
+  unless File.exist?('~/.vim/bundle/vundle')
+    puts "install vundle"
+    `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
+  end
+end
+
+
+task :install => :install_vundle do
   replace_all = false
   is_zsh = ENV['SHELL'].end_with?('zsh')
   Dir['*'].each do |file|
@@ -48,5 +56,7 @@ def link_file(file)
   puts "linking ~/.#{file}"
   system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
 end
+
+
 
 
