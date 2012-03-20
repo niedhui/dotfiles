@@ -1,4 +1,5 @@
 require "rake"
+require 'fileutils'
 
 desc "install the dot files into user's home directory"
 
@@ -9,8 +10,11 @@ task :install_vundle do
   end
 end
 
+task :prepare do
+  FileUtils.mkdir_p('~/.vim/backup')
+end
 
-task :install => :install_vundle do
+task :install => [:prepare,:install_vundle] do
   replace_all = false
   is_zsh = ENV['SHELL'].end_with?('zsh')
   Dir['*'].each do |file|
