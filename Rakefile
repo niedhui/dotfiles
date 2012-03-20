@@ -4,14 +4,14 @@ require 'fileutils'
 desc "install the dot files into user's home directory"
 
 task :install_vundle do
-  unless File.exist?('~/.vim/bundle/vundle')
+  unless File.exist? File.expand_path("~/.vim/bundle/vundle")
     puts "install vundle"
     `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
   end
 end
 
 task :prepare do
-  FileUtils.mkdir_p('~/.vim/backup')
+  FileUtils.mkdir_p File.expand_path('~/.vim/backup')
 end
 
 task :install => [:prepare,:install_vundle] do
@@ -47,6 +47,8 @@ task :install => [:prepare,:install_vundle] do
     puts "add . ~/.zsh/rc to your zshrc file"
   end
 end
+
+task :default => :install
 
 def next_cond(file,is_zsh)
   r = %w[Rakefile README.rdoc LICENSE].include? file
