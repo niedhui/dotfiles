@@ -39,6 +39,9 @@ task :install => :install_vundle do
       link_file(file)
     end
   end
+  if is_zsh
+    puts "add . ~/.zsh/rc to your zshrc file"
+  end
 end
 
 def next_cond(file,is_zsh)
