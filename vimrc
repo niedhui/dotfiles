@@ -15,6 +15,8 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'taq/vim-rspec.git'
 Bundle 'cakebaker/scss-syntax.vim'
 
+filetype plugin indent on     " required! 
+
 set number
 set ruler
 syntax on
