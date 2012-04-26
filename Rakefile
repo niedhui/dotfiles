@@ -1,7 +1,8 @@
 require "rake"
 
-desc "install the dot files into user's home directory"
+task :default => :install
 
+desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
   is_zsh = ENV['SHELL'].end_with?('zsh')
