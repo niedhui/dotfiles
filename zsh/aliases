@@ -1,0 +1,23 @@
+# -w only works on BSD serial...
+case "$(uname)" in
+  Darwin|FreeBSD)
+    alias lsa='ls -aw'
+    alias la='ls -aw'
+    alias l='ls -w'
+    alias ll='ls -lwh'
+    alias lla='ls -lwah'
+    ;;
+
+  OpenBSD)
+    ;;
+
+  Linux|*)
+    alias lsa='ls -a'
+    alias la='ls -a'
+    alias l='ls'
+    alias ll='ls -lh'
+    alias lla='ls -lah'
+    ;;
+esac
+
+alias vi=vim
