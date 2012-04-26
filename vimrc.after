@@ -1,0 +1,16 @@
+" vundle start
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'bbommarito/vim-slim'
+
+filetype plugin indent on
+
+" vundle end
+
+color desert
+syntax on
+autocmd BufWritePost *.go :silent Fmt
+autocmd BufWritePre * :%s/\s\+$//e
