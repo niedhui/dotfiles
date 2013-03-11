@@ -1,8 +1,0 @@
-function git_branch {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
-  echo "("${ref#refs/heads/}") ";
-}
-
-PS1="[\[\e[1;32m\]\w\[\e[0m\]] \[\e[0m\]\[\e[1;36m\]\$(git_branch)\[\e[0m\]$ "
-# rvm 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
