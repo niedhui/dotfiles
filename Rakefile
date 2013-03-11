@@ -3,11 +3,9 @@ require "rake"
 task :default => :install
 
 desc "install the dot files into user's home directory"
-task :install do
+task :install_basic do
   replace_all = false
-  is_zsh = ENV['SHELL'].end_with?('zsh')
   Dir['*'].each do |file|
-    next if next_cond(file,is_zsh)
     if File.exist?(File.join(ENV['HOME'],".#{file}"))
       # why?
       if File.identical? file,File.join(ENV['HOME'],".#{file}")
@@ -34,11 +32,21 @@ task :install do
   end
 end
 
-def next_cond(file,is_zsh)
-  r = %w[Rakefile README.rdoc LICENSE].include? file
-  r ||= (is_zsh &&  file.start_with?("bash"))
-  r ||= (!is_zsh && file.start_with?("zsh"))
+task :install_vundle do
+  if File.exist?(File.join(ENV["HOME"],"/.vim/bundle/vundle"))
+    puts "vundle seems already installed"
+  else
+    puts "start installing vundle"
+    `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
+  end
+  system 'vim +BundleInstall +qa'
 end
+
+task :source_rc do
+  `echo '. ~/.zsh/rc' >> ~/.zshrc`
+end
+
+task :install => [:install_basic, :install_vundle]
 
 def replace_file(file)
   system %Q{rm -rf "$HOME/.#{file}"}

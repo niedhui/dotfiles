@@ -21,3 +21,5 @@ case "$(uname)" in
 esac
 
 alias vi=vim
+alias m=mvim
+alias m.='m .'

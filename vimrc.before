@@ -1,1 +1,13 @@
 let mapleader = ","
+
+" vundle start
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'slim-template/vim-slim'
+
+filetype plugin indent on
+
+" vundle end
