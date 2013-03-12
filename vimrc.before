@@ -8,11 +8,23 @@ call vundle#rc()
 
 Bundle 'slim-template/vim-slim'
 Bundle 'Lokaltog/powerline'
+Bundle 'godlygeek/tabular'
 
 filetype plugin indent on
 
 " vundle end
-"
+
+" Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
+" Tabular
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
+
+
 set gfn=Menlo\ Regular:h14
+
+
+
