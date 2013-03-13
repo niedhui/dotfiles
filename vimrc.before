@@ -1,5 +1,8 @@
 let mapleader = ","
 
+" disable some  janus plugins
+"call janus#disable_plugin('vimwiki')
+
 " vundle start
 filetype off                   " required!
 
@@ -22,6 +25,9 @@ nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
+
+" vimwiki
+let g:vimwiki_ext2syntax = {}
 
 
 set gfn=Menlo\ Regular:h14
