@@ -32,6 +32,7 @@ task :install_basic do
   end
 end
 
+desc 'install vundle for vim'
 task :install_vundle do
   if File.exist?(File.join(ENV["HOME"],"/.vim/bundle/vundle"))
     puts "vundle seems already installed"
@@ -42,6 +43,20 @@ task :install_vundle do
   system 'vim +BundleInstall +qa'
 end
 
+desc 'install  tmux-MacOSX-pasteboard'
+task :install_tmux_macosx_pasteboard do
+  installed_path = File.join(ENV["HOME"],".tmux-MacOSX-pasteboard")
+  if File.exist?(installed_path)
+    puts 'tmux-MacOSX-pasteboard alread installed'
+  else
+    `git clone git://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git #{installed_path}`
+    FileUtils.cd(installed_path) do
+      `make reattach-to-user-namespace && cp reattach-to-user-namespace ~/bin`
+    end
+  end
+end
+
+desc 'add zsh/rc to .zshrc'
 task :source_rc do
   `echo '. ~/.zsh/rc' >> ~/.zshrc`
 end
