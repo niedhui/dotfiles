@@ -1,0 +1,4 @@
+ZSH_THEME='bira'
+DISABLE_AUTO_TITLE='true'
+
+plugins=(git brew osx)

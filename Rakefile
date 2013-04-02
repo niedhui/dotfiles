@@ -56,7 +56,7 @@ task :install_tmux_macosx_pasteboard do
   end
 end
 
-desc 'add zsh/rc to .zshrc'
+desc 'add custom rc file to zshrc'
 task :source_rc do
   `echo '. ~/.zsh/rc' >> ~/.zshrc`
 end
