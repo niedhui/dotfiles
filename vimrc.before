@@ -2,6 +2,7 @@ let mapleader = ","
 
 " disable some  janus plugins
 "call janus#disable_plugin('vimwiki')
+call janus#disable_plugin('snipmate-snippets')
 
 " vundle start
 filetype off                   " required!
@@ -12,6 +13,7 @@ call vundle#rc()
 Bundle 'slim-template/vim-slim'
 Bundle 'Lokaltog/powerline'
 Bundle 'godlygeek/tabular'
+Bundle 'niedhui/vim-snippets'
 
 filetype plugin indent on
 
