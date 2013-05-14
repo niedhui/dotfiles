@@ -27,12 +27,14 @@ nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
+nmap <Leader>a, :Tabularize /,\zs<CR>
+vmap <Leader>a, :Tabularize /,\zs<CR>
 
 " vimwiki
 let g:vimwiki_ext2syntax = {}
 
 
 set gfn=Menlo\ Regular:h14
-
+set dictionary+=~/.dict/ios_constants
 
 

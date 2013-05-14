@@ -43,3 +43,6 @@ alias giv="gem install -v"
 alias rk="rake"
 alias s="rspec"
 alias z="zeus"
+
+alias rake='noglob rake'
+alias mina='noglob mina'
