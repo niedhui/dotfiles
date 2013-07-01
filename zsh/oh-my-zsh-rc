@@ -1,4 +1,4 @@
 ZSH_THEME='bira'
 DISABLE_AUTO_TITLE='true'
 
-plugins=(git osx brew history encode64 bundler ralis3)
+plugins=(git osx brew history encode64 ralis3)
