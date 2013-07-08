@@ -11,16 +11,13 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'slim-template/vim-slim'
-Bundle 'Lokaltog/powerline'
+Bundle 'bling/vim-airline'
 Bundle 'godlygeek/tabular'
 Bundle 'niedhui/vim-snippets'
 
 filetype plugin indent on
 
 " vundle end
-
-" Powerline
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 " Tabular
 nmap <Leader>a= :Tabularize /=<CR>
@@ -35,6 +32,3 @@ let g:vimwiki_ext2syntax = {}
 
 
 set gfn=Menlo\ Regular:h14
-set dictionary+=~/.dict/ios_constants
-
-

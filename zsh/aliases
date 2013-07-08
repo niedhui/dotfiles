@@ -46,3 +46,4 @@ alias z="zeus"
 
 alias rake='noglob rake'
 alias mina='noglob mina'
+alias cl='cd $1 && ls'
