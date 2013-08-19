@@ -1,6 +1,5 @@
 " Mapping function. inspired from janus#add_mapping
 "
-" @param [String] The plugin name
 " @param [String] The mapping command (map, vmap, nmap or imap)
 " @param [String] The mapping keys
 " @param [String]* The mapping action

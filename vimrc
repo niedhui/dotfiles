@@ -27,17 +27,17 @@ for f in split(glob('~/.vim/bundle_config/*.vim'), '\n')
   exe 'source' f
 endfor
 
-" vimwiki
-let g:vimwiki_ext2syntax = {}
+"" vimwiki
+"let g:vimwiki_ext2syntax = {}
 
 
-set gfn=Menlo\ Regular:h14
+"set gfn=Menlo\ Regular:h14
 
-" vimafter
+"" vimafter
 
-" color will be able after the install
+"" color will be able after the install
 color solarized
 
-syntax on
+"syntax on
 autocmd BufWritePost *.go :silent Fmt
 autocmd BufWritePre * :%s/\s\+$//e
