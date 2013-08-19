@@ -16,6 +16,7 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'rking/ag.vim'
 
 filetype plugin indent on
 
