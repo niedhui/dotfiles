@@ -8,7 +8,11 @@ filetype off                   " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" tools
+Bundle 'tpope/vim-rails'
 Bundle 'slim-template/vim-slim'
+
+" langs
 Bundle 'bling/vim-airline'
 Bundle 'godlygeek/tabular'
 Bundle 'niedhui/vim-snippets'
@@ -17,6 +21,10 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'rking/ag.vim'
+Bundle 'vim-scripts/ZoomWin'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdcommenter'
 
 filetype plugin indent on
 
@@ -31,7 +39,7 @@ endfor
 "let g:vimwiki_ext2syntax = {}
 
 
-"set gfn=Menlo\ Regular:h14
+set gfn=Menlo\ Regular:h14
 
 "" vimafter
 
