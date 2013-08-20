@@ -11,20 +11,34 @@ call vundle#rc()
 " tools
 Bundle 'tpope/vim-rails'
 Bundle 'slim-template/vim-slim'
+Bundle 'tpope/vim-haml'
+Bundle 'kchmck/vim-coffee-script'
 
 " langs
 Bundle 'bling/vim-airline'
 Bundle 'godlygeek/tabular'
+
+" snip related
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
 Bundle 'niedhui/vim-snippets'
-Bundle 'terryma/vim-multiple-cursors'
+Bundle 'ervandew/supertab'
+
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+
+Bundle 'terryma/vim-multiple-cursors'
 Bundle 'kien/ctrlp.vim'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'rking/ag.vim'
 Bundle 'vim-scripts/ZoomWin'
+
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-repeat'
+
+" color scheme
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on
 
@@ -42,9 +56,6 @@ endfor
 set gfn=Menlo\ Regular:h14
 
 "" vimafter
-
-"" color will be able after the install
-color solarized
 
 "syntax on
 autocmd BufWritePost *.go :silent Fmt
