@@ -8,13 +8,12 @@ filetype off                   " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" tools
+" langs
 Bundle 'tpope/vim-rails'
 Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-haml'
 Bundle 'kchmck/vim-coffee-script'
 
-" langs
 Bundle 'bling/vim-airline'
 Bundle 'godlygeek/tabular'
 
