@@ -35,6 +35,7 @@ Bundle 'vim-scripts/ZoomWin'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-endwise'
 
 " color scheme
 Bundle 'altercation/vim-colors-solarized'
