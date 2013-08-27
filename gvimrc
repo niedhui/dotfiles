@@ -3,5 +3,6 @@ if has("gui_macvim")
 endif
 
 " color will be able after the install
+set background=light
 color solarized
 set guioptions-=T
