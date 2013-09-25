@@ -38,9 +38,11 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-bundler'
 
 " color scheme
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'mitsuhiko/fruity-vim-colorscheme'
 
 filetype plugin indent on
 
@@ -55,7 +57,7 @@ endfor
 "let g:vimwiki_ext2syntax = {}
 
 
-set gfn=Menlo\ Regular:h14
+set gfn=Anonymous\ Pro:h14
 
 "" vimafter
 
