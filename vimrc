@@ -57,7 +57,7 @@ endfor
 "let g:vimwiki_ext2syntax = {}
 
 
-set gfn=Anonymous\ Pro:h14
+set gfn=Anonymous\ Pro:h16
 
 "" vimafter
 
