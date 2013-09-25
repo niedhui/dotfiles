@@ -40,6 +40,9 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-bundler'
 
+Bundle 'iandoe/vim-osx-colorpicker'
+Bundle 'ap/vim-css-color'
+
 " color scheme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'mitsuhiko/fruity-vim-colorscheme'
