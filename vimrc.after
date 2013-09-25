@@ -1,5 +1,0 @@
-
-color desert
-syntax on
-autocmd BufWritePost *.go :silent Fmt
-autocmd BufWritePre * :%s/\s\+$//e
