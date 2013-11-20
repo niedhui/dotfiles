@@ -67,3 +67,5 @@ set gfn=Anonymous\ Pro:h16
 "syntax on
 autocmd BufWritePost *.go :silent Fmt
 autocmd BufWritePre * :%s/\s\+$//e
+
+set shell=/bin/sh
