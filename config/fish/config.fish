@@ -30,5 +30,4 @@ alias z="zeus"
 
 set PATH $HOME/bin $PATH
 set PATH $HOME/.rbenv/bin $PATH
-set PATH $HOME/.rbenv/shims $PATH
-rbenv rehash >/dev/null ^&1
+. (rbenv init -|psub)
