@@ -28,6 +28,7 @@ alias rk="rake"
 alias s="rspec"
 alias z="zeus"
 
+set -x EDITOR '/Users/niedhui/bin/mvim'
 set PATH $HOME/bin $PATH
 set PATH $HOME/.rbenv/bin $PATH
 . (rbenv init -|psub)
