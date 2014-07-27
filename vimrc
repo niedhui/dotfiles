@@ -14,9 +14,11 @@ Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-haml'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/Vim-R-plugin'
 
 Bundle 'bling/vim-airline'
 Bundle 'godlygeek/tabular'
+Bundle 'playonverbs/fish.vim'
 
 " snip related
 Bundle 'MarcWeber/vim-addon-mw-utils'
