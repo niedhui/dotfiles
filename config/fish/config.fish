@@ -31,5 +31,6 @@ set PATH $HOME/.rbenv/bin $PATH
 set PATH /Library/Caches/Homebrew/node_modules/coffee-script/bin $PATH
 set PATH /usr/local/lib/node_modules/js-beautify/js/bin $PATH
 . (rbenv init -|psub)
-eval (direnv hook fish)
 set -x EDITOR 'mvim'
+
+eval (direnv hook fish)

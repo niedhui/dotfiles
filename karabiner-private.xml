@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>HHKB adopt Hyper settings</name>
+    <identifier>niedhui.hhkb_hyper</identifier>
+    <appendix>(Option_R / TAB to Hyper (ctrl+shift+cmd+opt), press only once, send escape)</appendix>
+    <appendix>Hyper(cmd+ctrl+shift+opt)+J/K/H/L, send down/up/left/right</appendix>
+
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::TAB,
+      KeyCode::COMMAND_L,
+      ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+      KeyCode::TAB
+    </autogen>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::OPTION_R,
+      KeyCode::COMMAND_L,
+      ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+      KeyCode::ESCAPE
+    </autogen>
+    <autogen>
+      --KeyToKey--
+      KeyCode::DELETE, ModifierFlag::SHIFT_L | ModifierFlag::NONE,
+      KeyCode::FORWARD_DELETE
+    </autogen>
+    <autogen>
+      --KeyToKey--
+      KeyCode::J, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_DOWN
+    </autogen>
+    <autogen>
+      --KeyToKey--
+      KeyCode::K, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_UP
+    </autogen>
+    <autogen>
+      --KeyToKey--
+      KeyCode::H, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_LEFT
+    </autogen>
+    <autogen>
+      --KeyToKey--
+      KeyCode::L, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_RIGHT
+    </autogen>
+  </item>
+</root>
+
