@@ -1,3 +1,5 @@
 vim/bundle
 fish_history
 fishd.*
+config/direnv/allow/
+Gemfile.lock

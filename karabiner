@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+item 'Hyper settings' do
+  identifier 'niedhui.hyper'
+  autogen " --KeyOverlaidModifier-- KeyCode::TAB, KeyCode::COMMAND_L, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L, KeyCode::TAB"
+  autogen " --KeyOverlaidModifier-- KeyCode::OPTION_R, KeyCode::COMMAND_L, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L, KeyCode::ESCAPE"
+
+  hyper_code = "ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L"
+  autogen "__KeyToKey__ KeyCode::J, #{hyper_code}, KeyCode::CURSOR_DOWN"
+  autogen "__KeyToKey__ KeyCode::K, #{hyper_code}, KeyCode::CURSOR_UP"
+  autogen "__KeyToKey__ KeyCode::H, #{hyper_code}, KeyCode::CURSOR_LEFT"
+  autogen "__KeyToKey__ KeyCode::L, #{hyper_code}, KeyCode::CURSOR_RIGHT"
+
+  autogen "__KeyToKey__ KeyCode::KEY_5, #{hyper_code}, KeyCode::F5"
+
+end

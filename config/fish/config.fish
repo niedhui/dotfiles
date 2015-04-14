@@ -24,7 +24,6 @@ alias rk="rake"
 alias s="rspec"
 alias z="zeus"
 
-set -x EDITOR '/Users/niedhui/bin/mvim'
 set -x YACF_PROJECT_PATH '/Users/niedhui/workspace/yacf/crowdfund2'
 set PATH $HOME/bin $PATH
 set PATH $HOME/.rbenv/bin $PATH
