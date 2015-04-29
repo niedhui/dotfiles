@@ -1,4 +1,5 @@
-# awesome print
+require 'irbtools' rescue nil
+
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
 # irb history

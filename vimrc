@@ -43,7 +43,8 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-bundler'
 
 Bundle 'iandoe/vim-osx-colorpicker'
-Bundle 'ap/vim-css-color'
+"Bundle 'ap/vim-css-color'
+Bundle 'gorodinskiy/vim-coloresque'
 
 " color scheme
 Bundle 'altercation/vim-colors-solarized'
