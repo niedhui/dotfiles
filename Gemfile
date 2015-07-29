@@ -10,6 +10,6 @@ gem 'irbtools'
 gem 'tmuxinator'
 gem 'ru'
 
-
 # profile
 gem 'ruby-prof'
+gem 'ghost'
