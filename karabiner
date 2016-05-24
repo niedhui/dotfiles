@@ -12,5 +12,6 @@ item 'Hyper settings' do
   autogen "__KeyToKey__ KeyCode::L, #{hyper_code}, KeyCode::CURSOR_RIGHT"
 
   autogen "__KeyToKey__ KeyCode::KEY_5, #{hyper_code}, KeyCode::F5"
+  autogen "__KeyToKey__ KeyCode::KEY_8, #{hyper_code}, KeyCode::F8"
 
 end

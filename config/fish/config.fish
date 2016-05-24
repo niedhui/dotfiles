@@ -29,7 +29,10 @@ set PATH $HOME/bin $PATH
 set PATH $HOME/.rbenv/bin $PATH
 set PATH /Library/Caches/Homebrew/node_modules/coffee-script/bin $PATH
 set PATH /usr/local/lib/node_modules/js-beautify/js/bin $PATH
+set PATH /usr/local/sbin $PATH
 . (rbenv init -|psub)
 set -x EDITOR 'mvim'
+set -x RUBYMOTION_ANDROID_SDK '/Users/niedhui/.rubymotion-android/sdk'
+set -x RUBYMOTION_ANDROID_NDK '/Users/niedhui/.rubymotion-android/ndk'
 
 eval (direnv hook fish)
