@@ -10,6 +10,10 @@ gem 'irbtools'
 gem 'tmuxinator'
 gem 'ru'
 
+gem 'bundler-audit'
+gem 'brakeman'
+gem 'rubocop'
+
 # profile
 gem 'ruby-prof'
 
