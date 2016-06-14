@@ -24,6 +24,9 @@ alias rk="rake"
 alias s="rspec"
 alias z="zeus"
 
+# docker
+alias dc="docker-compose"
+
 set -x YACF_PROJECT_PATH '/Users/niedhui/workspace/yacf/crowdfund2'
 set PATH $HOME/bin $PATH
 set PATH /usr/local/sbin $PATH
