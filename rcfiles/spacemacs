@@ -32,8 +32,8 @@ values."
      git
      dockerfile
      java
+     markdown
      ;; git
-     ;; markdown
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
