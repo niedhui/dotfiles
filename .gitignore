@@ -1,5 +1,5 @@
 vim/bundle
 fish_history
 fishd.*
-config/direnv/allow/
+rcfiles/config/direnv/allow/
 Gemfile.lock
