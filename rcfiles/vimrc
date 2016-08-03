@@ -1,5 +1,4 @@
 "vimbefore
-source ~/.vim/functions.vim
 let mapleader = ","
 
 " vundle start
