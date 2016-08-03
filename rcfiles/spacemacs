@@ -25,13 +25,15 @@ values."
      ;; ----------------------------------------------------------------
      ;; auto-completion
      ;; better-defaults
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-enable-snippets-in-popup t)
      emacs-lisp
      ruby
      yaml
      git
      dockerfile
      java
+     go
      markdown
      ansible
      ;; git
@@ -262,6 +264,7 @@ you should place your code here."
   (setq ruby-insert-encoding-magic-comment nil)
   (global-set-key (kbd "C-S-i") 'imenu)
   (global-set-key (kbd "C-S-m") 'helm-imenu)
+  (global-company-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

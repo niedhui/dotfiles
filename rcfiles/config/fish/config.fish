@@ -28,8 +28,10 @@ alias z="zeus"
 alias dc="docker-compose"
 
 set -x YACF_PROJECT_PATH '/Users/niedhui/workspace/yacf/crowdfund2'
+set -x GOPATH '/Users/niedhui/.gocode'
 set PATH $HOME/bin $PATH
 set PATH /usr/local/sbin $PATH
+set PATH $GOPATH/bin $PATH
 . (rbenv init -|psub)
 set -x EDITOR 'mvim'
 set -x RUBYMOTION_ANDROID_SDK '/Users/niedhui/.rubymotion-android/sdk'
