@@ -8,16 +8,9 @@ alias tlf="tail -f"
 alias mkdir='mkdir -p'
 
 # vim
-alias vi=vim
-alias m=mvim
-alias m.='m .'
-
-# Bundler
-alias b="bundle"
-
-# Rubygems
-alias gi="gem install"
-alias giv="gem install -v"
+alias vi=nvim
+alias vim=nvim
+alias n=nvim
 
 #Rails
 alias rk="rake"
@@ -27,12 +20,22 @@ alias z="zeus"
 # docker
 alias dc="docker-compose"
 
-set -x YACF_PROJECT_PATH '/Users/niedhui/workspace/yacf/crowdfund2'
+
+set -x ANDROID_HOME /Users/niedhui/Library/Android/sdk
+set -x NDK_HOME $ANDROID_HOME/ndk-bundle
+set -x GOPATH /Users/niedhui/workspace/gopath
+set -x EDITOR 'vim'
+set -x SCALA_HOME /usr/local/opt/scala/idea
+set -x PGDATA /usr/local/var/postgres
+
 set PATH $HOME/bin $PATH
 set PATH /usr/local/sbin $PATH
-. (rbenv init -|psub)
-set -x EDITOR 'mvim'
-set -x RUBYMOTION_ANDROID_SDK '/Users/niedhui/.rubymotion-android/sdk'
-set -x RUBYMOTION_ANDROID_NDK '/Users/niedhui/.rubymotion-android/ndk'
+set PATH $PATH /usr/local/opt/go/libexec/bin
+set PATH $PATH $HOME/.cargo/bin
+set PATH $ANDROID_HOME/platform-tools $PATH
 
-eval (direnv hook fish)
+direnv hook fish | source
+
+status --is-interactive; and source (rbenv init -|psub)
+
+set -x LANG C

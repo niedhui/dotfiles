@@ -8,15 +8,16 @@ task :install_basic do
   RCFiles.new.install!
 end
 
-desc 'install vundle for vim'
-task :install_vundle do
-  if File.exist?(File.join(ENV["HOME"], "/.vim/bundle/vundle"))
-    puts "vundle seems already installed"
+desc 'install vim_plug for vim'
+task :install_vim_plug do
+  if File.exist?(File.join(ENV["HOME"], "/.local/share/nvim/site/autoload/plug.vim"))
+    puts "vim plug seems already installed"
   else
-    puts "start installing vundle"
-    `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
+    puts "start installing vim plug"
+    `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
   end
-  system 'vim +BundleInstall +qa'
+  system 'vim +PlugInstall +qa'
 end
 
 task :install => [:install_basic]
