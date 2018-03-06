@@ -2,4 +2,7 @@ vim/bundle
 fish_history
 fishd.*
 rcfiles/config/direnv/allow/
+rcfiles/config/configstore/*
 Gemfile.lock
+fzf_key_bindings.fish
+fish_user_key_bindings.fish
