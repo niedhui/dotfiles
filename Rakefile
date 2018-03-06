@@ -17,7 +17,7 @@ task :install_vim_plug do
     `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
   end
-  system 'vim +PlugInstall +qa'
+  system 'nvim +PlugInstall +qa'
 end
 
 task :install => [:install_basic]
