@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/niedhui/workspace/opensource/nodejs-pool'
-let g:netrw_dirhist_2='/Users/niedhui/workspace/opensource/rust-crates/jsonrpc'
-let g:netrw_dirhist_3='/Users/niedhui/workspace/opensource/rust-crates/serde-json'
-let g:netrw_dirhist_4='/Users/niedhui/workspace/opensource/rust-crates/parity'
-let g:netrw_dirhist_5='/Users/niedhui/workspace/opensource/rust-crates/parity/parity'
-let g:netrw_dirhist_6='/Users/niedhui/workspace/zhima/aas'

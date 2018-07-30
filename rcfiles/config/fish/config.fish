@@ -1,10 +1,6 @@
 # alias
-alias lsa='ls -aw'
-alias la='ls -aw'
-alias l='ls -w'
-alias ll='ls -lwh'
-alias lla='ls -lwah'
-alias tlf="tail -f"
+alias l='exa'
+alias ll='exa -l'
 alias mkdir='mkdir -p'
 
 # vim
@@ -33,9 +29,14 @@ set PATH /usr/local/sbin $PATH
 set PATH $PATH /usr/local/opt/go/libexec/bin
 set PATH $PATH $HOME/.cargo/bin
 set PATH $ANDROID_HOME/platform-tools $PATH
+set PATH /Users/niedhui/Applications/flutter/bin $PATH
 
 direnv hook fish | source
 
 status --is-interactive; and source (rbenv init -|psub)
 
 set -x LANG C
+set -x LC_ALL en_US.UTF-8
+set -x LANG en_US.UTF-8
+
+fortune |cowsay
