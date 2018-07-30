@@ -10,12 +10,19 @@ brew 'node'
 brew 'rbenv'
 brew 'sqlite'
 brew 'ssh-copy-id'
-brew 'the_silver_searcher'
 brew 'tig'
 brew 'tree'
 brew 'wget'
 brew 'jq'
 brew 'httpstat'
+brew 'fd'
+brew 'exa'
+brew 'bat'
+
+brew 'dnsmasq'
+brew 'ansible'
+brew 'netcat'
+brew 'ripgrep'
 
 cask 'alfred'
 cask 'vimr'
@@ -28,3 +35,37 @@ cask 'dash'
 cask 'insomnia'
 cask 'shortcat'
 cask 'karabiner-elements'
+cask 'tower'
+cask 'bartender'
+
+cask 'jetbrains-toolbox'
+cask 'visual-studio-code'
+cask 'android-studio'
+
+cask 'google-chrome'
+cask 'firefox'
+
+mas '1Password 7', id: 1333542190
+mas "Annotate", id: 918207447
+mas "Bear", id: 1091189122
+mas "CleanMyDrive 2", id: 523620159
+mas "DaisyDisk", id: 411643860
+mas "Deckset", id: 847496013
+mas "Ember", id: 402456742
+mas "Eudb_en_free", id: 434350458
+mas "Evernote", id: 406056744
+mas "Fantastical 2", id: 975937182
+mas "MindNode Pro", id: 402398561
+mas "Notability", id: 736189492
+mas "NotePlan", id: 1137020764
+mas "Pixelmator", id: 407963104
+mas "Quiver", id: 866773894
+mas "SnippetsLab", id: 1006087419
+mas "The Unarchiver", id: 425424353
+mas "Things3", id: 904280696
+mas "Tweetbot", id: 1384080005
+mas "Twitter", id: 409789998
+mas "WeChat", id: 836500024
+mas "Write", id: 848311469
+mas "xScope", id: 889428659
+
