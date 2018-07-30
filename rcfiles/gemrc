@@ -2,7 +2,7 @@
 :verbose: true
 :update_sources: true
 :sources:
-- https://gems.ruby-china.org/
+- https://gems.ruby-china.com
 :backtrace: false
 :bulk_threshold: 1000
 :benchmark: false
