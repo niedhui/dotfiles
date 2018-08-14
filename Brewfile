@@ -6,6 +6,7 @@ brew 'go'
 brew 'neovim'
 
 brew 'jsonpp'
+brew 'cmake'
 brew 'node'
 brew 'rbenv'
 brew 'sqlite'
