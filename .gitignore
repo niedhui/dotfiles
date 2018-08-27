@@ -3,6 +3,8 @@ fish_history
 fishd.*
 rcfiles/config/direnv/allow/
 rcfiles/config/configstore/*
+rcfiles/config/kingsoft*
+Kingsoft
 Gemfile.lock
 fzf_key_bindings.fish
 fish_user_key_bindings.fish
