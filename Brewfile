@@ -27,6 +27,7 @@ brew 'postgresql'
 brew 'telnet'
 brew 'yarn'
 brew 'redis'
+brew 'mysql'
 
 brew 'dnsmasq'
 brew 'ansible'
