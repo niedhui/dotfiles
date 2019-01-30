@@ -1,3 +1,5 @@
+tap 'dart-lang/dart'
+
 brew 'fish'
 brew 'tmux'
 brew 'direnv'
@@ -5,6 +7,7 @@ brew 'rbenv'
 brew 'go'
 brew 'dep'
 brew 'neovim'
+brew 'dart'
 
 brew 'jsonpp'
 brew 'cmake'
@@ -28,11 +31,13 @@ brew 'telnet'
 brew 'yarn'
 brew 'redis'
 brew 'mysql'
+brew 'gnuplot'
 
 brew 'dnsmasq'
 brew 'ansible'
 brew 'netcat'
 brew 'ripgrep'
+brew 'fzf'
 
 cask 'alfred'
 cask 'vimr'
@@ -52,10 +57,10 @@ cask 'dropbox'
 #cask 'surge'
 cask 'fluid'
 cask 'vagrant'
+cask 'alacritty'
 
 cask 'jetbrains-toolbox'
 cask 'visual-studio-code'
-cask 'android-studio'
 
 cask 'google-chrome'
 cask 'firefox'
@@ -63,7 +68,6 @@ cask 'firefox'
 mas '1Password 7', id: 1333542190
 mas "Annotate", id: 918207447
 mas "Bear", id: 1091189122
-mas "CleanMyDrive 2", id: 523620159
 mas "DaisyDisk", id: 411643860
 mas "Deckset", id: 847496013
 mas "Ember", id: 402456742

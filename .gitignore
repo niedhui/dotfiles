@@ -1,5 +1,6 @@
 vim/bundle
 fish_history
+fish_variables
 fishd.*
 rcfiles/config/direnv/allow/
 rcfiles/config/configstore/*
