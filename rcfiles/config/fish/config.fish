@@ -3,6 +3,7 @@ abbr -a l 'exa'
 abbr -a ll 'exa -l'
 abbr -a mkdir 'mkdir -p'
 abbr -a m make
+abbr -a brewup 'brew update; and brew upgrade; and brew cleanup'
 
 # vim
 abbr -a vi nvim
