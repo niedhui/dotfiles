@@ -3,6 +3,7 @@ abbr -a l 'exa'
 abbr -a ll 'exa -l'
 abbr -a mkdir 'mkdir -p'
 abbr -a m make
+abbr -a ci code-insiders
 
 # vim
 abbr -a vi nvim
@@ -23,6 +24,8 @@ abbr -a gah 'git stash; and git pull --rebase; and git stash pop'
 abbr -a gc 'git checkout'
 abbr -a gcb 'git checkout -b'
 abbr -a gs 'git status'
+abbr -a gpull 'git pull'
+abbr -a gpush 'git push'
 
 # cargo
 abbr -a c cargo
