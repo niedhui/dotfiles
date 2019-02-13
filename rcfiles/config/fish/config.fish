@@ -15,6 +15,7 @@ abbr -a n nvim
 abbr -a rk "rake"
 abbr -a s "rspec"
 abbr -a z "zeus"
+abbr -a b "bundle"
 
 # docker
 abbr -a dc "docker-compose"
