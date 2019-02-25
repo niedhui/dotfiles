@@ -54,9 +54,14 @@ set PATH $HOME/Applications/flutter/bin $PATH
 set PATH $GOPATH/bin $PATH
 set PATH $HOME/Applications/protoc-3.5.1-osx-x86_64/bin $PATH
 
-direnv hook fish | source
 
-status --is-interactive; and source (rbenv init -|psub)
+if command -sq direnv
+  direnv hook fish | source
+end
+
+if command -sq rbenv; and status --is-interactive
+  source (rbenv init -|psub)
+end
 
 set -x LANG C
 set -x LC_ALL en_US.UTF-8
@@ -65,6 +70,6 @@ set -x LANG en_US.UTF-8
 fish_vi_key_bindings
 
 # launch tmux
-if status --is-interactive
+if command -sq tmux; and status --is-interactive
 	tmux ^ /dev/null; and exec true
 end
