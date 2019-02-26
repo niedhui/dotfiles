@@ -17,7 +17,7 @@ function _git_status_symbol
 end
 
 
-function fish_prompt
+function fish_prompt_default
   set -l cyan (set_color cyan)
   set -l normal (set_color normal)
 
@@ -31,4 +31,17 @@ function fish_prompt
   end
 
   echo -n $format_date$cwd$cyan$git_status$normal'> '
+end
+
+function fish_prompt_vagrant
+  echo -n -s $USER @ (prompt_hostname) ' ' (set_color $fish_color_cwd) (prompt_pwd) (set_color $fish_color_normal) '> '
+end
+
+function fish_prompt
+  switch $USER
+    case vagrant
+      fish_prompt_vagrant
+    case '*'
+      fish_prompt_default
+  end
 end
