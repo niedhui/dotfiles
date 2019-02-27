@@ -23,7 +23,7 @@ function fish_prompt_default
 
   set -l cwd (set_color $fish_color_cwd)(prompt_pwd)
   set -l git_status (_git_status_symbol)(_git_branch_name)
-  set -l format_date  (set_color  yellow )(date  "+%Y-%m-%d %H:%M:%S")(set_color  normal)
+  set -l format_date  (set_color  yellow )(date  "+%H:%M:%S")(set_color  normal)
   set -l format_date "[$format_date] "
 
   if test -n "$git_status"
