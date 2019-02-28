@@ -38,6 +38,8 @@ brew 'ansible'
 brew 'netcat'
 brew 'ripgrep'
 brew 'fzf'
+brew 'autojump'
+brew 'pgrep'
 
 cask 'alfred'
 cask 'vimr'

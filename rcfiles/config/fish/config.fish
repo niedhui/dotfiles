@@ -62,6 +62,8 @@ if command -sq rbenv; and status --is-interactive
   source (rbenv init -|psub)
 end
 
+[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
+
 set -x LC_ALL en_US.UTF-8
 set -x LANG en_US.UTF-8
 
