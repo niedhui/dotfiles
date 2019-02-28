@@ -3,7 +3,8 @@
 ""
 
 set nocompatible      " Use vim, no vi defaults
-set rnu               " Use relative number
+set nu                " enable number
+set rnu               " Use relative number, set nu and rnu produce hybrid number mode
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
 set encoding=utf-8    " Set default encoding to UTF-8
