@@ -21,6 +21,7 @@ Plug 'dag/vim-fish'
 call plug#end()
 
 source ~/.config/nvim/config/vim.vim
+source ~/.config/nvim/config/vim_mappings.vim
 source ~/.config/nvim/config/nerdtree.vim
 source ~/.config/nvim/config/nerd_commenter.vim
 source ~/.config/nvim/config/ack.vim
