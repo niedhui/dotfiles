@@ -1,0 +1,15 @@
+[user]
+  name = niedhui
+  email = niedhui@gmail.com
+[color]
+  ui = true
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+[mergetool]
+  keepBackup = true
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = nvim

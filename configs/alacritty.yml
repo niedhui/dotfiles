@@ -43,8 +43,7 @@ window:
   #     - transparent: Title bar, transparent background, but no title bar buttons
   decorations: full
 
-  # When true, alacritty starts maximized.
-  start_maximized: false
+  startup_mode: Maximized
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -188,6 +187,14 @@ colors:
     magenta: '0xb854d4'
     cyan:    '0x1fad83'
     white:   '0xfefbec'
+
+  indexed_colors:
+    - { index: 16, color: '0xb65611' }
+    - { index: 17, color: '0xd43552' }
+    - { index: 18, color: '0x292824' }
+    - { index: 19, color: '0x6e6b5e' }
+    - { index: 20, color: '0x999580' }
+    - { index: 21, color: '0xe8e4cf' }
 
 
 # Visual Bell
@@ -430,6 +437,7 @@ key_bindings:
 
   - { key: Paste,                   action: Paste                        }
   - { key: Copy,                    action: Copy                         }
+  - { key: N,        mods: Command, action: SpawnNewInstance             }
   - { key: L,        mods: Control, action: ClearLogNotice               }
   - { key: L,        mods: Control, chars: "\x0c"                        }
   - { key: Home,                    chars: "\x1bOH",   mode: AppCursor   }
