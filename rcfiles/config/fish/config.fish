@@ -5,6 +5,7 @@ abbr -a mkdir 'mkdir -p'
 abbr -a m make
 abbr -a ci code-insiders
 abbr -a brewup 'brew update; and brew upgrade; and brew cleanup'
+abbr -a clear_vim_swp 'rm -rf $HOME/.local/share/nvim/swap/*'
 
 # vim
 abbr -a vi nvim
@@ -52,7 +53,6 @@ set PATH $PATH $HOME/.cargo/bin
 set PATH $ANDROID_HOME/platform-tools $PATH
 set PATH $HOME/Applications/flutter/bin $PATH
 set PATH $GOPATH/bin $PATH
-set PATH $HOME/Applications/protoc-3.5.1-osx-x86_64/bin $PATH
 
 if command -sq direnv
   direnv hook fish | source
