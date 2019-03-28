@@ -2,9 +2,15 @@
 "" General Mappings (Normal, Visual, Operator-pending)
 ""
 
-" Toggle paste mode
-nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
-imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
+" more ESC
+inoremap <C-j> <Esc>
+vnoremap <C-j> <Esc>
+inoremap <C-c> <Esc>
+vnoremap <C-c> <Esc>
+
+" line start and end
+map H ^
+map L $
 
 " format the entire file
 nmap <leader>fef ggVG=``

@@ -6,6 +6,7 @@ abbr -a m make
 abbr -a ci code-insiders
 abbr -a brewup 'brew update; and brew upgrade; and brew cleanup'
 abbr -a clear_vim_swp 'rm -rf $HOME/.local/share/nvim/swap/*'
+abbr -a dfh 'df -h'
 
 # vim
 abbr -a vi nvim
@@ -32,6 +33,7 @@ abbr -a gpush 'git push'
 
 # cargo
 abbr -a c cargo
+abbr -a cc 'cargo c'
 
 abbr -a vifish 'nvim $HOME/.config/fish/config.fish'
 abbr -a vivi 'nvim $HOME/.config/nvim/init.vim'
