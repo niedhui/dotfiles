@@ -1,5 +1,5 @@
 install_alacritty:
-	sudo add-apt-repositiory ppa:system76/pop
+	sudo add-apt-repository ppa:system76/pop
 	sudo apt update
 	sudo apt install alacritty
 install_apts:
@@ -33,9 +33,7 @@ idea:
 
 alacritty:
 	ln -sf $(abspath configs/alacritty.yml) ${HOME}/.config/alacritty/alacritty
-
-karabiner:
-	ln -sf $(abspath configs/karabiner.json) ${HOME}/.config/karabiner/karabiner.json
+karabiner: ln -sf $(abspath configs/karabiner.json) ${HOME}/.config/karabiner/karabiner.json
 
 bootstrap_common: fish vim git tmux ruby idea alacritty
 
