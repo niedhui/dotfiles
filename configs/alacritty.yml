@@ -43,7 +43,7 @@ window:
   #     - transparent: Title bar, transparent background, but no title bar buttons
   decorations: full
 
-  startup_mode: Maximized
+  start_maximized: true
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
