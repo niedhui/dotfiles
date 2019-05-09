@@ -32,13 +32,16 @@ idea:
 	ln -sf $(abspath configs/ideavimrc) ${HOME}/.ideavimrc
 
 alacritty:
-	ln -sf $(abspath configs/alacritty.yml) ${HOME}/.config/alacritty/alacritty.yml
+	ln -sf $(abspath configs/alacritty/alacritty.yml) ${HOME}/.config/alacritty/alacritty.yml
+
+alacritty_gpd:
+	ln -sf $(abspath configs/alacritty/alacritty_gpd.yml) ${HOME}/.config/alacritty/alacritty.yml
 
 karabiner:
 	ln -sf $(abspath configs/karabiner.json) ${HOME}/.config/karabiner/karabiner.json
 
-bootstrap_common: fish vim git tmux ruby idea alacritty
+bootstrap_common: fish vim git tmux ruby idea
 
-bootstrap_osx: bootstrap_common karabiner
+bootstrap_osx: bootstrap_common karabiner alacritty
 
 bootstrap_ubuntu: install_alacritty install_apts bootstrap_common
