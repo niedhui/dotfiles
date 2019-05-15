@@ -3,6 +3,9 @@ noremap \ ,
 
 source ~/.config/nvim/minpac.vim
 
+" allow mouse to switch window, drag to resize
+set mouse=a
+
 set nocompatible      " Use vim, no vi defaults
 set nu                " enable number
 set rnu               " Use relative number, set nu and rnu produce hybrid number mode
