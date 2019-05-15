@@ -40,6 +40,11 @@ alacritty_gpd:
 karabiner:
 	ln -sf $(abspath configs/karabiner.json) ${HOME}/.config/karabiner/karabiner.json
 
+asdf_ruby:
+	-asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+	asdf install ruby 2.6.3
+	asdf global ruby 2.6.3
+
 bootstrap_common: fish vim git tmux ruby idea
 
 bootstrap_osx: bootstrap_common karabiner alacritty

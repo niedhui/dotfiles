@@ -22,6 +22,8 @@ scrolling:
 tabspaces: 8
 
 font:
+  normal:
+    family: Source Code Pro
   size: 14.0
 
   offset:

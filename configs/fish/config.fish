@@ -30,6 +30,7 @@ abbr -a gpush 'git push'
 # cargo
 abbr -a c cargo
 abbr -a cc 'cargo c'
+abbr -a cb 'cargo b'
 
 setenv EDITOR 'nvim'
 
