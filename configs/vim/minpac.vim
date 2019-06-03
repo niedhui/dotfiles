@@ -11,6 +11,7 @@ function! PackInit() abort
 	call minpac#add('airblade/vim-rooter')
 	call minpac#add('dag/vim-fish', {'type': 'opt'})
   call minpac#add('mileszs/ack.vim')
+  call minpac#add('rust-lang/rust.vim')
 endfunction
 
 command! PackUpdate call PackInit() | call minpac#update('', {'do': 'call minpac#status()'})
