@@ -1,7 +1,7 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 window:
-  dimensions:
+  imensions:
     columns: 0
     lines: 0
 
@@ -11,7 +11,7 @@ window:
 
   dynamic_padding: false
   decorations: full
-  start_maximized: true
+  startup_mode: Maximized
 
 scrolling:
   history: 10000
@@ -35,9 +35,9 @@ font:
     y: 0
   use_thin_strokes: true
 
-render_timer: false
-
-persistent_logging: false
+debug:
+  render_timer: false
+  persistent_logging: false
 
 draw_bold_text_with_bright_colors: true
 
