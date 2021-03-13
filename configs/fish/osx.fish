@@ -7,12 +7,6 @@ setenv NDK_HOME $ANDROID_HOME/ndk-bundle
 
 prepend_path $HOME/Applications/flutter/bin
 prepend_path /usr/local/opt/go/libexec/bin
+prepend_path /usr/local/sbin
 
-# https://github.com/fish-shell/fish-shell/pull/5767 remove this when fish 3.0.3 released
-prepend_path $HOME/.asdf/shims /usr/local/opt/asdf/bin
-
-if command -sq asdf
-  source (brew --prefix asdf)/asdf.fish
-end
-
-
+abbr -a fixkara 'sudo killall karabiner_grabber; and sudo killall karabiner_observer'

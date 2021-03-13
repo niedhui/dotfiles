@@ -8,3 +8,4 @@ vnoremap <C-c> <Esc>
 
 map H ^
 map L $
+set ideajoin

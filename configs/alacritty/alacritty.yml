@@ -12,14 +12,12 @@ window:
   dynamic_padding: false
   decorations: full
   startup_mode: Maximized
+  dynamic_title: true
 
 scrolling:
   history: 10000
   multiplier: 3
-  faux_multiplier: 3
-  auto_scroll: false
 
-tabspaces: 8
 
 font:
   normal:
@@ -43,49 +41,49 @@ draw_bold_text_with_bright_colors: true
 
 # Base16 Atelier Dune 256 - alacritty color config
 # Bram de Haan (http://atelierbramdehaan.nl)
-colors:
-  # Default colors
-  primary:
-    background: '0x20201d'
-    foreground: '0xa6a28c'
+#colors:
+#  # Default colors
+#  primary:
+#    background: '0x20201d'
+#    foreground: '0xa6a28c'
+#
+#  # Colors the cursor will use if `custom_cursor_colors` is true
+#  cursor:
+#    text: '0x20201d'
+#    cursor: '0xa6a28c'
+#
+#  # Normal colors
+#  normal:
+#    black:   '0x20201d'
+#    red:     '0xd73737'
+#    green:   '0x60ac39'
+#    yellow:  '0xae9513'
+#    blue:    '0x6684e1'
+#    magenta: '0xb854d4'
+#    cyan:    '0x1fad83'
+#    white:   '0xa6a28c'
+#
+#  # Bright colors
+#  bright:
+#    black:   '0x7d7a68'
+#    red:     '0xd73737'
+#    green:   '0x60ac39'
+#    yellow:  '0xae9513'
+#    blue:    '0x6684e1'
+#    magenta: '0xb854d4'
+#    cyan:    '0x1fad83'
+#    white:   '0xfefbec'
+#
+#  indexed_colors:
+#    - { index: 16, color: '0xb65611' }
+#    - { index: 17, color: '0xd43552' }
+#    - { index: 18, color: '0x292824' }
+#    - { index: 19, color: '0x6e6b5e' }
+#    - { index: 20, color: '0x999580' }
+#    - { index: 21, color: '0xe8e4cf' }
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x20201d'
-    cursor: '0xa6a28c'
 
-  # Normal colors
-  normal:
-    black:   '0x20201d'
-    red:     '0xd73737'
-    green:   '0x60ac39'
-    yellow:  '0xae9513'
-    blue:    '0x6684e1'
-    magenta: '0xb854d4'
-    cyan:    '0x1fad83'
-    white:   '0xa6a28c'
-
-  # Bright colors
-  bright:
-    black:   '0x7d7a68'
-    red:     '0xd73737'
-    green:   '0x60ac39'
-    yellow:  '0xae9513'
-    blue:    '0x6684e1'
-    magenta: '0xb854d4'
-    cyan:    '0x1fad83'
-    white:   '0xfefbec'
-
-  indexed_colors:
-    - { index: 16, color: '0xb65611' }
-    - { index: 17, color: '0xd43552' }
-    - { index: 18, color: '0x292824' }
-    - { index: 19, color: '0x6e6b5e' }
-    - { index: 20, color: '0x999580' }
-    - { index: 21, color: '0xe8e4cf' }
-
-
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
   color: '0xffffff'
@@ -108,7 +106,6 @@ selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
   save_to_clipboard: false
 
-dynamic_title: true
 
 cursor:
   style: Block

@@ -11,6 +11,7 @@ abbr -a clear_vim_swp 'rm -rf $HOME/.local/share/nvim/swap/*'
 abbr -a dfh 'df -h'
 
 abbr -a vifish 'nvim $HOME/.config/fish/config.fish'
+abbr -a cdfish 'nvim $HOME/.config/fish'
 abbr -a vivi 'nvim $HOME/.config/nvim/init.vim'
 
 # vim
@@ -45,13 +46,22 @@ switch (uname)
     [ -f $HOME/.config/fish/linux.fish ]; and source $HOME/.config/fish/linux.fish
 end
 
-setenv GOPATH $HOME/workspace/gopath
 setenv EDITOR 'nvim'
 
 set -x LC_ALL en_US.UTF-8
 set -x LANG en_US.UTF-8
 
 prepend_path $HOME/bin
-prepend_path $GOPATH/bin
 prepend_path $HOME/.cargo/bin
 prepend_path $ANDROID_HOME/platform-tools
+
+prepend_path $HOME/.tiup/bin
+
+if command -sq asdf
+  setenv ASDF_RUBY_BUILD_VERSION master
+  source (brew --prefix asdf)/asdf.fish
+end
+
+zoxide init fish | source
+
+starship init fish | source
