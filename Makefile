@@ -45,6 +45,9 @@ asdf_ruby:
 	asdf install ruby 2.6.3
 	asdf global ruby 2.6.3
 
+npm:
+	npm i -g typescript ts-node typescript-language-server truffle
+
 bootstrap_common: fish vim git tmux ruby idea
 
 bootstrap_osx: bootstrap_common karabiner alacritty
