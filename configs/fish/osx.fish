@@ -1,3 +1,8 @@
+if command -sq asdf
+  setenv ASDF_RUBY_BUILD_VERSION master
+  source (brew --prefix asdf)/asdf.fish
+end
+
 abbr -a brewup 'brew update; and brew upgrade; and brew cleanup'
 
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
@@ -9,4 +14,3 @@ prepend_path $HOME/Applications/flutter/bin
 prepend_path /usr/local/opt/go/libexec/bin
 prepend_path /usr/local/sbin
 
-abbr -a fixkara 'sudo killall karabiner_grabber; and sudo killall karabiner_observer'

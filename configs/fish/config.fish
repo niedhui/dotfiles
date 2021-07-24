@@ -46,6 +46,8 @@ switch (uname)
     [ -f $HOME/.config/fish/linux.fish ]; and source $HOME/.config/fish/linux.fish
 end
 
+[-f $HOME/.config/fish/local.fish ]; and source $HOME/.config/fish/local.fish
+
 setenv EDITOR 'nvim'
 
 set -x LC_ALL en_US.UTF-8
@@ -57,15 +59,10 @@ prepend_path $ANDROID_HOME/platform-tools
 
 prepend_path $HOME/.tiup/bin
 
-if command -sq asdf
-  setenv ASDF_RUBY_BUILD_VERSION master
-  source (brew --prefix asdf)/asdf.fish
-end
-
 zoxide init fish | source
 
 starship init fish | source
 
-# tabtab source for packages
+#sd tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
