@@ -8,12 +8,19 @@ function! PackInit() abort
 	call minpac#add('scrooloose/nerdtree')
 	call minpac#add('scrooloose/nerdcommenter')
 	call minpac#add('airblade/vim-rooter')
-	call minpac#add('airblade/vim-rooter')
 	call minpac#add('dag/vim-fish', {'type': 'opt'})
   call minpac#add('mileszs/ack.vim')
   call minpac#add('rust-lang/rust.vim')
+"  call minpac#add('vim-syntastic/syntastic')
   call minpac#add('tomlion/vim-solidity')
-  endif
+" call minpac#add('leafgarland/typescript-vim')
+" call minpac#add('peitalin/vim-jsx-typescript')
+
+  call minpac#add('neovim/nvim-lspconfig')
+  call minpac#add('hrsh7th/nvim-compe')
+  call minpac#add('L3MON4D3/LuaSnip')
+  call minpac#add('windwp/nvim-autopairs')
+
 endfunction
 
 command! PackUpdate call PackInit() | call minpac#update('', {'do': 'call minpac#status()'})
