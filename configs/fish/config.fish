@@ -46,7 +46,7 @@ switch (uname)
     [ -f $HOME/.config/fish/linux.fish ]; and source $HOME/.config/fish/linux.fish
 end
 
-[-f $HOME/.config/fish/local.fish ]; and source $HOME/.config/fish/local.fish
+[ -f $HOME/.config/fish/local.fish ]; and source $HOME/.config/fish/local.fish
 
 setenv EDITOR 'nvim'
 
