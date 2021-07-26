@@ -66,6 +66,7 @@ nmap <Leader>b :Buffers<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader>g :GFiles<CR>
 nmap <Leader>r :Tags<CR>
+nmap <Leader>s :BTags<CR>
 nmap <Leader>w :Windows<CR>
 
 
