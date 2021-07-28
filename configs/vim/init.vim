@@ -129,13 +129,11 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noinsert'
-EOF
 
 
-""" nvim-compe && lua-snip
-lua << EOF
 -- Compe setup
 require'compe'.setup {
   enabled = true;
@@ -162,6 +160,25 @@ require'compe'.setup {
     ultisnips = false,
   };
 }
+
+
+nvim_lsp.rust_analyzer.setup({
+    on_attach=on_attach,
+    settings = {
+        ["rust-analyzer"] = {
+            assist = {
+                importGranularity = "module",
+                importPrefix = "by_self",
+            },
+            cargo = {
+                loadOutDirsFromCheck = true
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
+})
 
 -- Utility functions for compe and luasnip
 local t = function(str)
@@ -209,9 +226,7 @@ vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
-EOF
 
-lua <<EOF
 require('nvim-autopairs').setup()
 require("nvim-autopairs.completion.compe").setup({
   map_cr = true, --  map <CR> on insert mode
