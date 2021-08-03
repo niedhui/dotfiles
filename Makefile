@@ -41,6 +41,9 @@ alacritty_gpd:
 karabiner:
 	ln -sf $(abspath configs/karabiner.json) ${HOME}/.config/karabiner/karabiner.json
 
+ctags:
+	ln -sf $(abspath configs/ctags.d) ${HOME}/.ctags.d
+
 asdf_ruby:
 	-asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 	asdf install ruby 2.6.3
