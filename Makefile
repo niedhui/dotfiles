@@ -35,9 +35,6 @@ idea:
 alacritty:
 	ln -sf $(abspath configs/alacritty/alacritty.yml) ${HOME}/.config/alacritty/alacritty.yml
 
-alacritty_gpd:
-	ln -sf $(abspath configs/alacritty/alacritty_gpd.yml) ${HOME}/.config/alacritty/alacritty.yml
-
 karabiner:
 	ln -sf $(abspath configs/karabiner.json) ${HOME}/.config/karabiner/karabiner.json
 
@@ -49,8 +46,8 @@ asdf_ruby:
 	asdf install ruby 2.6.3
 	asdf global ruby 2.6.3
 
-npm:
-	npm i -g typescript ts-node typescript-language-server truffle
+ts:
+	npm i -g typescript ts-node typescript-language-server
 
 bootstrap_common: fish vim git tmux ruby idea
 
