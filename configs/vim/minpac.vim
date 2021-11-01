@@ -15,6 +15,9 @@ function! PackInit() abort
   call minpac#add('tomlion/vim-solidity')
 " call minpac#add('leafgarland/typescript-vim')
 " call minpac#add('peitalin/vim-jsx-typescript')
+"
+
+  call minpac#add('cespare/vim-toml')
 
   call minpac#add('neovim/nvim-lspconfig')
   call minpac#add('hrsh7th/nvim-compe')
