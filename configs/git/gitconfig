@@ -1,6 +1,6 @@
 [user]
-  name = niedhui
-  email = niedhui@gmail.com
+	name = niedhui
+	email = niedhui@gmail.com
 [color]
   ui = true
 [alias]
@@ -18,3 +18,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[init]
+	defaultBranch = main
