@@ -21,7 +21,17 @@ scrolling:
 
 font:
   normal:
-    family: Source Code Pro
+    family: Hack Nerd Font Mono
+    style: Regular
+  bold:
+    family: Hack Nerd Font Mono
+    style: Bold
+  italic:
+    family: Hack Nerd Font Mono
+    style: Italic
+  bold_italic:
+    family: Hack Nerd Font Mono
+    style: Bold Italic
   size: 14.0
 
   offset:
@@ -88,7 +98,6 @@ bell:
   duration: 0
   color: '0xffffff'
 
-background_opacity: 1.0
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
@@ -99,7 +108,7 @@ mouse:
 
   hide_when_typing: false
 
-  url:
+  hints:
     modifiers: None
 
 selection:

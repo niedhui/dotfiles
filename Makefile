@@ -12,9 +12,7 @@ fish:
 	ln -sf $(abspath configs/fish) ${HOME}/.config/fish
 
 vim:
-	-git clone https://github.com/k-takata/minpac.git  ${HOME}/.config/nvim/pack/minpac/opt/minpac
-	ln -sf $(abspath configs/vim/init.vim) ${HOME}/.config/nvim/init.vim
-	ln -sf $(abspath configs/vim/minpac.vim) ${HOME}/.config/nvim/minpac.vim
+	ln -sf $(abspath configs/vim) ${HOME}/.config/nvim
 
 git:
 	ln -sf $(abspath configs/git/gitconfig) ${HOME}/.gitconfig

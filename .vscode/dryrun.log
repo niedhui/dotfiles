@@ -1,0 +1,6 @@
+make: Entering directory `/Users/niedhui/workspace/dotfiles'
+sudo add-apt-repository ppa:system76/pop
+sudo apt update
+sudo apt install alacritty
+make: Leaving directory `/Users/niedhui/workspace/dotfiles'
+ 
