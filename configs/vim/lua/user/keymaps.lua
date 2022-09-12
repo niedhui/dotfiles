@@ -48,3 +48,7 @@ keymap("v", ">", ">gv", opts)
 keymap("v", "<A-j>", "<Esc>:m .+1<CR>==", opts)
 keymap("v", "<A-k>", "<Esc>:m .-2<CR>==", opts)
 
+-- Plugins
+
+-- NvimTree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)

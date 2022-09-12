@@ -40,7 +40,10 @@ packer.init {
 return packer.startup(function(use)
   use "wbthomason/packer.nvim"
   use "nvim-lua/plenary.nvim"
-  use "windwp/nvim-autopairs"
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
   use "numToStr/Comment.nvim"
 
   -- auto complete
@@ -53,5 +56,26 @@ return packer.startup(function(use)
 
   use "L3MON4D3/LuaSnip"
   use "rafamadriz/friendly-snippets"
+
+
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+
+  use "neovim/nvim-lspconfig"
+
+  use "github/copilot.vim"
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+
+  use "nvim-telescope/telescope.nvim"
+
+
 end)
 

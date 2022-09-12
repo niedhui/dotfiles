@@ -32,7 +32,7 @@ font:
   bold_italic:
     family: Hack Nerd Font Mono
     style: Bold Italic
-  size: 14.0
+  size: 16.0
 
   offset:
     x: 0

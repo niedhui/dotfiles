@@ -12,7 +12,7 @@ abbr -a dfh 'df -h'
 
 abbr -a vifish 'nvim $HOME/.config/fish/config.fish'
 abbr -a cdfish 'nvim $HOME/.config/fish'
-abbr -a vivi 'nvim $HOME/.config/nvim/init.vim'
+abbr -a vivi 'nvim $HOME/.config/nvim/init.lua'
 
 # vim
 abbr -a vi nvim
