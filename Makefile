@@ -1,3 +1,5 @@
+.PHONY: vscode_extensions
+
 install_alacritty:
 	sudo add-apt-repository ppa:system76/pop
 	sudo apt update
@@ -31,10 +33,16 @@ idea:
 	ln -sf $(abspath configs/ideavimrc) ${HOME}/.ideavimrc
 
 alacritty:
-	ln -sf $(abspath configs/alacritty/alacritty.yml) ${HOME}/.config/alacritty/alacritty.yml
+	ln -sf $(abspath configs/alacritty) ${HOME}/.config/alacritty
 
 karabiner:
 	ln -sf $(abspath configs/karabiner.json) ${HOME}/.config/karabiner/karabiner.json
+
+zellij:
+	ln -sf $(abspath configs/zellij) ${HOME}/.config/zellij
+
+dns:
+	ln -sf $(abspath configs/dns) ${HOME}/.config/dns
 
 ctags:
 	ln -sf $(abspath configs/ctags.d) ${HOME}/.ctags.d
@@ -46,6 +54,12 @@ asdf_ruby:
 
 ts:
 	npm i -g typescript ts-node typescript-language-server
+
+vscode_insiders_extensions:
+	cat vscode_extensions | xargs -I {} code-insiders --install-extension  {} --force
+
+vscode_extensions:
+	cat vscode_extensions | xargs -I {} code --install-extension  {} --force
 
 bootstrap_common: fish vim git tmux ruby idea
 

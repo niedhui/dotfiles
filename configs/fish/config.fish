@@ -7,7 +7,7 @@ abbr -a lll 'exa -la'
 abbr -a mkdir 'mkdir -p'
 abbr -a m make
 abbr -a ci code-insiders
-abbr -a clear_vim_swp 'rm -rf $HOME/.local/share/nvim/swap/*'
+abbr -a clear_vim_swp 'rm -rf $HOME/.local/state/nvim/swap/*'
 abbr -a dfh 'df -h'
 
 abbr -a vifish 'nvim $HOME/.config/fish/config.fish'
@@ -33,10 +33,16 @@ abbr -a c cargo
 abbr -a cc 'cargo c'
 abbr -a cb 'cargo b'
 
+abbr -a rr 'rustrover'
+
 setenv EDITOR 'nvim'
 
 if command -sq direnv
   direnv hook fish | source
+end
+
+if set -q ZELLIJ
+  abbr -a zrf 'zellij run -f --'
 end
 
 switch (uname)
@@ -57,8 +63,6 @@ prepend_path $HOME/bin
 prepend_path $HOME/.cargo/bin
 prepend_path $ANDROID_HOME/platform-tools
 
-prepend_path $HOME/.tiup/bin
-
 zoxide init fish | source
 
 starship init fish | source
@@ -66,3 +70,10 @@ starship init fish | source
 #sd tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
+
+prepend_path $HOME/.foundry/bin
+
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

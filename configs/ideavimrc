@@ -9,3 +9,6 @@ vnoremap <C-c> <Esc>
 map H ^
 map L $
 set ideajoin
+
+nnoremap g; :action JumpToLastChange<Enter>
+nnoremap g, :action JumpToNextChange<Enter>
