@@ -35,15 +35,17 @@ abbr -a cb 'cargo b'
 
 abbr -a rr 'rustrover'
 
+
 setenv EDITOR 'nvim'
 
-if command -sq direnv
-  direnv hook fish | source
-end
+set -x LC_ALL en_US.UTF-8
+set -x LANG en_US.UTF-8
 
-if set -q ZELLIJ
-  abbr -a zrf 'zellij run -f --'
-end
+fish_add_path $HOME/bin
+fish_add_path $HOME/.cargo/bin
+fish_add_path $ANDROID_HOME/platform-tools
+fish_add_path $HOME/.foundry/bin
+
 
 switch (uname)
   case Darwin
@@ -52,27 +54,27 @@ switch (uname)
     [ -f $HOME/.config/fish/linux.fish ]; and source $HOME/.config/fish/linux.fish
 end
 
+if command -sq zoxide
+  zoxide init fish | source
+end
+
+if command -sq starship
+  starship init fish | source
+end
+
+if command -sq direnv
+  direnv hook fish | source
+end
+
+if command -sq go
+  fish_add_path (go env GOPATH)/bin
+end
+
+if set -q ZELLIJ
+  abbr -a zrf 'zellij run -f --'
+end
+
 [ -f $HOME/.config/fish/local.fish ]; and source $HOME/.config/fish/local.fish
-
-setenv EDITOR 'nvim'
-
-set -x LC_ALL en_US.UTF-8
-set -x LANG en_US.UTF-8
-
-prepend_path $HOME/bin
-prepend_path $HOME/.cargo/bin
-prepend_path $ANDROID_HOME/platform-tools
-
-zoxide init fish | source
-
-starship init fish | source
-
-#sd tabtab source for packages
-# uninstall by removing these lines
-[ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
-
-prepend_path $HOME/.foundry/bin
-
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"

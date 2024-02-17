@@ -1,13 +1,8 @@
 .PHONY: vscode_extensions
 
-install_alacritty:
-	sudo add-apt-repository ppa:system76/pop
-	sudo apt update
-	sudo apt install alacritty
+shell:
+	stow shell
 
-install_apts:
-	sudo apt update
-	sudo apt install git neovim curl build-essential tmux exa ripgrep fzf
 
 fish:
 	-@rm -rf ${HOME}/.config/fish
