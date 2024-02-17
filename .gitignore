@@ -3,3 +3,4 @@ fish_variables
 configs/fish/local.fish
 configs/fish/completions
 Brewfile.lock.json
+gui/.config/karabiner/automatic_backups/
