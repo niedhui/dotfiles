@@ -1,9 +1,18 @@
 fish_vi_key_bindings
 
-abbr -a ls 'exa'
-abbr -a l 'exa'
-abbr -a ll 'exa -l'
-abbr -a lll 'exa -la'
+if command -sq exa
+  abbr -a ls 'eza'
+  abbr -a l 'eza'
+  abbr -a la 'eza -a'
+  abbr -a ll 'eza -l'
+  abbr -a lll 'eza -la'
+else
+  abbr -a l 'ls'
+  abbr -a la 'ls -a'
+	abbr -a ll 'ls -l'
+	abbr -a lll 'ls -la'
+end
+
 abbr -a mkdir 'mkdir -p'
 abbr -a m make
 abbr -a ci code-insiders
